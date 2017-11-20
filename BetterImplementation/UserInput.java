@@ -1,7 +1,10 @@
+import java.io.*;
+import java.util.*;
+
 public class UserInput {
-    public static String getInput() {
+    public static String getInput() throws Exception {
         // The BufferedReader used throughout
-        public static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         return br.readLine();
     }
 }

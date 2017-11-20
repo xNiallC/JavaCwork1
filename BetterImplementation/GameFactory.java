@@ -1,14 +1,16 @@
 public class GameFactory {
-    public enum GameType = {Dice, Card};
+    private enum GameType {
+            d, c;
+    }
 
-    public static AbstractGame createNewGame(GameType type) {
-        switch(type) {
-            case GameType.Dice:
-                return new DiceGame();
-                break;
-            case GameType.Card:
+    public static AbstractGame createNewGame(String userInput) {
+        GameType userGameChoice = GameType.valueOf(userInput);
+        switch(userGameChoice) {
+            case d:
+                return new DieGame();
+            case c:
                 return new CardGame();
-                break;
         }
+        return new DieGame();
     }
 }

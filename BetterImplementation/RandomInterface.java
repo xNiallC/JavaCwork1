@@ -1,3 +1,3 @@
 public interface RandomInterface {
-  public double next();
+    double next();
 }

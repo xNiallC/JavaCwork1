@@ -2,15 +2,16 @@ import java.io.*;
 import java.util.*;
 
 public class Game {
-    public static void playGame(GameType game) throws Exception {
+    public static void playGame(String game) throws Exception {
         AbstractGame newGame = GameFactory.createNewGame(game);
-
+        newGame.initialiseGame();
+        newGame.mainGame();
+        newGame.declareGameWinner();
     }
 
-
-    public static void main (String[] args) {
+    public static void main (String[] args) throws Exception {
         System.out.print("Card (c) or Die (d) game? ");
-        userChosenGame = UserInput.getInput();
+        String userChosenGame = UserInput.getInput();
         playGame(userChosenGame);
     }
 }
