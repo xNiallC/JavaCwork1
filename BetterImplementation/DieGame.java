@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 class DieGame extends AbstractGame {
-    private static HashSet<Integer> numbersRolled;
+    private HashSet<Integer> numbersRolled;
 
     public DieGame() {
         this.numbersRolled = new HashSet<Integer>();
@@ -10,8 +10,7 @@ class DieGame extends AbstractGame {
 
     void initialiseGame() {
         // Nothing to do
-        System.out.println('Hello');
-        return;
+        System.out.println("hello");
     }
 
     void makeRandomChoice(double randomChoice) {

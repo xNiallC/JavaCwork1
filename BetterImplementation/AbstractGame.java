@@ -3,8 +3,6 @@ abstract class AbstractGame {
 
     }
 
-    abstract void initialiseGame();
-
     abstract void makeRandomChoice(double randomChoice);
 
     public void mainGame() throws Exception {
@@ -19,4 +17,6 @@ abstract class AbstractGame {
     }
 
     abstract void declareGameWinner();
+
+    abstract void initialiseGame();
 }

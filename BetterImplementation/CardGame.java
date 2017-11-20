@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 class CardGame extends AbstractGame {
-    private static ArrayList<String> cardList;
-    private static HashSet<String> cardsChosen;
+    private ArrayList<String> cardList;
+    private HashSet<String> cardsChosen;
     RandomInterface r=new LinearCongruentialGenerator();
 
     public CardGame() {
