@@ -15,6 +15,13 @@ public class Game {
   public static void playCardGame() throws Exception {
       // Play card game:
 
+      GameInterface newGame = GameFactory.createGame('Dice');
+
+      newGame.mainGame();
+
+      newGame.declareGameWinner();
+
+
       // Initialise the game
       initialiseCardGame();
 
