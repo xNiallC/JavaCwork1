@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 class CardGame extends AbstractGame {
-    private ArrayList<String> cardList;
-    private HashSet<String> cardsChosen;
+    private static ArrayList<String> cardList;
+    private static HashSet<String> cardsChosen;
     RandomInterface r=new LinearCongruentialGenerator();
 
     public CardGame() {
@@ -25,9 +25,7 @@ class CardGame extends AbstractGame {
                 "AClbs", "2Clbs", "3Clbs", "4Clbs", "5Clbs", "6Clbs",
                 "7Clbs", "8Clbs", "9Clbs", "10Clbs", "JClbs",
                 "QClbs", "KClbs"};
-        System.out.println("hello");
         this.cardList = new ArrayList<String> (Arrays.asList(cards));
-        System.out.println(cardList);
         // Taking advantage of "generics" to tell the compiler all the elements will be Strings
 
         // Shuffle them

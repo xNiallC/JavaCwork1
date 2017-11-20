@@ -2,15 +2,15 @@ import java.io.*;
 import java.util.*;
 
 class DieGame extends AbstractGame {
-    private HashSet<Integer> numbersRolled;
+    private static HashSet<Integer> numbersRolled;
 
     public DieGame() {
         this.numbersRolled = new HashSet<Integer>();
     }
 
-    void initialiseGame() {
+    void initialiseGame() throws Exception {
         // Nothing to do
-        System.out.println("hello");
+        return;
     }
 
     void makeRandomChoice(double randomChoice) {
