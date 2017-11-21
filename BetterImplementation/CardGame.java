@@ -57,6 +57,8 @@ class CardGame extends AbstractGame {
 
         // User wins if one of them is an Ace
         System.out.println("Cards chosen: " + cardsChosen);
+        System.out.println("Remaining cards: " + cardList);
+        
         if (cardsChosen.contains("AHrts") || cardsChosen.contains("ADmnds") ||
                 cardsChosen.contains("ASpds") || cardsChosen.contains("AClbs")) {
             System.out.println("You won!");
