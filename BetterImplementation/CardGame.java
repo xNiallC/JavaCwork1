@@ -49,7 +49,7 @@ class CardGame extends AbstractGame {
     }
 
     void getIntroText() {
-        System.out.println("penisS");
+        System.out.println("Hit <RETURN> to choose a card");
     }
 
     void declareGameWinner() {

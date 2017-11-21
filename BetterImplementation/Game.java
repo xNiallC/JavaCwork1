@@ -4,7 +4,9 @@ import java.util.*;
 public class Game {
     // Init a game and run game methods
     public static void playGame(String game) throws Exception {
+        // Request game from factory
         AbstractGame newGame = GameFactory.createNewGame(game);
+        // Run game methods
         newGame.initialiseGame();
         newGame.mainGame();
         newGame.declareGameWinner();

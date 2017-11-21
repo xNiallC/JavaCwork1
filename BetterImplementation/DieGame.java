@@ -30,7 +30,7 @@ class DieGame extends AbstractGame {
         else System.out.println("You lost!");
     }
 
-    String getIntroText() {
-        return "Hit <RETURN> to roll the die";
+    void getIntroText() {
+        System.out.println("Hit <RETURN> to roll the die");
     }
 }
