@@ -44,9 +44,12 @@ class CardGame extends AbstractGame {
 
     void makeRandomChoice(double randomChoice) {
         int cardChoice= (int)(randomChoice * cardList.size());
-
         System.out.println("You chose " + cardList.get(cardChoice));
         cardsChosen.add(cardList.remove(cardChoice));
+    }
+
+    void getIntroText() {
+        System.out.println("penisS");
     }
 
     void declareGameWinner() {

@@ -29,4 +29,8 @@ class DieGame extends AbstractGame {
         }
         else System.out.println("You lost!");
     }
+
+    String getIntroText() {
+        return "Hit <RETURN> to roll the die";
+    }
 }
